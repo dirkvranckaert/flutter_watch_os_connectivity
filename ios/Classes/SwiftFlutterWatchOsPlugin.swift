@@ -229,10 +229,11 @@ public class SwiftFlutterWatchOsConnectivityPlugin: NSObject, FlutterPlugin {
     }
     
     private func checkSessionReachability(result: FlutterResult){
-        if (!watchSession!.isReachable){
-            handleFlutterError(result: result, message: "Session is not reachable, your companion app is either disconnected or is in offline mode")
-            return
-        }
+        return;
+//        if (!watchSession!.isReachable){
+//            handleFlutterError(result: result, message: "Session is not reachable, your companion app is either disconnected or is in offline mode")
+//            return
+//        }
     }
 }
 
